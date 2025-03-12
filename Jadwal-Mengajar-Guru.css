@@ -1,52 +1,74 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #A8E6A2; /* Hijau muda */
-    color: #1B5E20; /* Hijau tua */
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 0;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
 }
 
-main {
-    margin: 20px;
+header .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2E7D32;
+}
+
+.selector {
+    text-align: center;
+    margin: 20px 0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: #E8F5E9;
 }
 
 th {
-    background: #81C784; /* Hijau muda */
-    color: #1B5E20; /* Hijau tua */
-    padding: 10px;
-}
-
-td {
-    padding: 10px;
-    text-align: center;
-    background-color: #E8F5E9; /* Putih kehijauan */
+    background-color: #388E3C;
+    color: white;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #A8E6A2; /* Hijau muda */
-    color: #1B5E20; /* Hijau tua */
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
-    font-weight: bold;
 }
