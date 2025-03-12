@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Kontak Kami</title>
+  </head>
+  <body>
+    <body class="bg-gray-50"></body>
+
+    <!--header-->
+    <header
+      class="bg-gray-100 h-[80px] flex items-center fixed top-0 left-0 w-full"
+    >
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center gap-2">
+          <img
+            src="./images/logo-smkn1.png"
+            alt="SMK Negeri 1 Bandar Lampung"
+            class="w-[70px]"
+          />
+          <p class="text-xl font-semibold">SMK Negeri 1 Bandar Lampung</p>
+        </div>
+        <button
+          id="menu-toggle"
+          class="md:hidden text-gray-700 focus:outline-none cursor-pointer"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <nav class="hidden md:flex">
+          <ul class="flex space-x-4">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Beranda"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="data-guru.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Guru"
+                >Guru</a
+              >
+            </li>
+            <li>
+              <a
+                href="berita.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Berita"
+                >Berita</a
+              >
+            </li>
+            <li>
+              <a
+                href="visi-misi.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Visi Misi"
+                >Visi Misi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Kontak-kami.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Kontak Kami"
+                >Kontak Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="prestasi.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Prestasi"
+                >Prestasi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Data-siswa.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Data Siswa"
+                >Data Siswa</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          id="mobile-menu"
+          class="hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md md:hidden"
+        >
+          <ul class="flex flex-col items-center space-y-4 py-4">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Beranda"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="data-guru.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Guru"
+                >Guru</a
+              >
+            </li>
+            <li>
+              <a
+                href="berita.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Berita"
+                >Berita</a
+              >
+            </li>
+            <li>
+              <a
+                href="visi-misi.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Visi Misi"
+                >Visi Misi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Kontak-kami.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Kontak Kami"
+                >Kontak Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="prestasi.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Prestasi"
+                >Prestasi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Data-siswa.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Data Siswa"
+                >Data Siswa</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="container mx-auto py-12">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-[80px]"
+      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            alt="Achievement 1"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="images/Placeholder_img.jpg"
+            width="400"
+          />
+          <div class="p-4 bg-blue-500 text-white text-center">Juara ...</div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            alt="Achievement 2"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="images/Placeholder_img.jpg"
+            width="400"
+          />
+          <div class="p-4 bg-blue-500 text-white text-center">Juara ...</div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            alt="Achievement 3"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="images/Placeholder_img.jpg"
+            width="400"
+          />
+          <div class="p-4 bg-blue-500 text-white text-center">Juara ...</div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            alt="Achievement 4"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="images/Placeholder_img.jpg"
+            width="400"
+          />
+          <div class="p-4 bg-blue-500 text-white text-center">Juara ...</div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            alt="Achievement 4"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="images/Placeholder_img.jpg"
+            width="400"
+          />
+          <div class="p-4 bg-blue-500 text-white text-center">Juara ...</div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            alt="Achievement 4"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="images/Placeholder_img.jpg"
+            width="400"
+          />
+          <div class="p-4 bg-blue-500 text-white text-center">Juara ...</div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-full">
+          Lebih Lanjut
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-4">
+      <div class="container mx-auto">
+        <div class="flex items-center gap-2 mb-2">
+          <img
+            src="./images/logo-smkn1.png"
+            alt="SMK Negeri 1 Bandar Lampung"
+            class="w-[100px]"
+          />
+          <div class="font-semibold">
+            <p>SMK Negeri 1 Bandar Lampung</p>
+            <p>Sekolah Pusat Keunggulan</p>
+          </div>
+        </div>
+        <p class="mb-4">
+          Gunung Sulah, Way Halim, Jl. Pulau Morotai No.33, Jagabaya III, Kec.
+          Sukarame, Kota Bandar Lampung, Lampung 35122
+        </p>
+        <a
+          href="https://smkn1bdl.sch.id/"
+          target="_blank"
+          rel="noreferer"
+          class="font-semibold hover:underline"
+          >smkn1bdl.sch.id</a
+        >
+        <hr class="text-gray-400 mt-12 mb-4" />
+        <p class="py-4">Copyright © SMK Negeri 1 Bandar Lampung</p>
+      </div>
+    </footer>
+  </body>
+</html>

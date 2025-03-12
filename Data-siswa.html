@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Kontak Kami</title>
+  </head>
+  <body>
+    <body class="bg-gray-50"></body>
+
+    <!--header-->
+    <header
+      class="bg-gray-100 h-[80px] flex items-center fixed top-0 left-0 w-full"
+    >
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center gap-2">
+          <img
+            src="./images/logo-smkn1.png"
+            alt="SMK Negeri 1 Bandar Lampung"
+            class="w-[70px]"
+          />
+          <p class="text-xl font-semibold">SMK Negeri 1 Bandar Lampung</p>
+        </div>
+        <button
+          id="menu-toggle"
+          class="md:hidden text-gray-700 focus:outline-none cursor-pointer"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <nav class="hidden md:flex">
+          <ul class="flex space-x-4">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Beranda"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="data-guru.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Guru"
+                >Guru</a
+              >
+            </li>
+            <li>
+              <a
+                href="berita.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Berita"
+                >Berita</a
+              >
+            </li>
+            <li>
+              <a
+                href="visi-misi.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Visi Misi"
+                >Visi Misi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Kontak-kami.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Kontak Kami"
+                >Kontak Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="prestasi.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Prestasi"
+                >Prestasi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Data-siswa.html"
+                class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Data Siswa"
+                >Data Siswa</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          id="mobile-menu"
+          class="hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md md:hidden"
+        >
+          <ul class="flex flex-col items-center space-y-4 py-4">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Beranda"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="data-guru.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Guru"
+                >Guru</a
+              >
+            </li>
+            <li>
+              <a
+                href="berita.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Berita"
+                >Berita</a
+              >
+            </li>
+            <li>
+              <a
+                href="visi-misi.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Visi Misi"
+                >Visi Misi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Kontak-kami.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Kontak Kami"
+                >Kontak Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="prestasi.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Prestasi"
+                >Prestasi</a
+              >
+            </li>
+            <li>
+              <a
+                href="Data-siswa.html"
+                class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer"
+                data-page="Data Siswa"
+                >Data Siswa</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-8">
+      <h2 class="text-2xl font-bold text-center mb-4 mt-[110px]">Data Siswa</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-200">
+          <thead>
+            <tr class="bg-blue-500 text-white">
+              <th class="py-2 px-4 border">No</th>
+              <th class="py-2 px-4 border">Nama</th>
+              <th class="py-2 px-4 border">NIS</th>
+              <th class="py-2 px-4 border">Gender</th>
+              <th class="py-2 px-4 border">Kelas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-blue-100">
+              <td class="py-2 px-4 border text-center">1</td>
+              <td class="py-2 px-4 border">Muhammad Robbani Nasrsam</td>
+              <td class="py-2 px-4 border text-center">161707029</td>
+              <td class="py-2 px-4 border text-center">L</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="py-2 px-4 border text-center">2</td>
+              <td class="py-2 px-4 border">Muhammad Zachrie Kurniawan</td>
+              <td class="py-2 px-4 border text-center">161707113</td>
+              <td class="py-2 px-4 border text-center">L</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="py-2 px-4 border text-center">3</td>
+              <td class="py-2 px-4 border">Afif Rizki Putra</td>
+              <td class="py-2 px-4 border text-center">161707061</td>
+              <td class="py-2 px-4 border text-center">L</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="py-2 px-4 border text-center">4</td>
+              <td class="py-2 px-4 border">Muhammad Raihan Jamil</td>
+              <td class="py-2 px-4 border text-center">161707105</td>
+              <td class="py-2 px-4 border text-center">L</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="py-2 px-4 border text-center">5</td>
+              <td class="py-2 px-4 border">Saif Abdullah</td>
+              <td class="py-2 px-4 border text-center">161707109</td>
+              <td class="py-2 px-4 border text-center">L</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="py-2 px-4 border text-center">6</td>
+              <td class="py-2 px-4 border">Lutfiyah Fakhira</td>
+              <td class="py-2 px-4 border text-center">161707085</td>
+              <td class="py-2 px-4 border text-center">P</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="py-2 px-4 border text-center">7</td>
+              <td class="py-2 px-4 border">Annisa Dina</td>
+              <td class="py-2 px-4 border text-center">161707041</td>
+              <td class="py-2 px-4 border text-center">P</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="py-2 px-4 border text-center">8</td>
+              <td class="py-2 px-4 border">Hanif Diah Ulhaq</td>
+              <td class="py-2 px-4 border text-center">161707089</td>
+              <td class="py-2 px-4 border text-center">L</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="py-2 px-4 border text-center">9</td>
+              <td class="py-2 px-4 border">ZAK ZAIN</td>
+              <td class="py-2 px-4 border text-center">161707069</td>
+              <td class="py-2 px-4 border text-center">L</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="py-2 px-4 border text-center">10</td>
+              <td class="py-2 px-4 border">NAJLAA NAFISHA AULIA</td>
+              <td class="py-2 px-4 border text-center">161707077</td>
+              <td class="py-2 px-4 border text-center">P</td>
+              <td class="py-2 px-4 border text-center">IX A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-4">
+      <div class="container mx-auto">
+        <div class="flex items-center gap-2 mb-2">
+          <img
+            src="./images/logo-smkn1.png"
+            alt="SMK Negeri 1 Bandar Lampung"
+            class="w-[100px]"
+          />
+          <div class="font-semibold">
+            <p>SMK Negeri 1 Bandar Lampung</p>
+            <p>Sekolah Pusat Keunggulan</p>
+          </div>
+        </div>
+        <p class="mb-4">
+          Gunung Sulah, Way Halim, Jl. Pulau Morotai No.33, Jagabaya III, Kec.
+          Sukarame, Kota Bandar Lampung, Lampung 35122
+        </p>
+        <a
+          href="https://smkn1bdl.sch.id/"
+          target="_blank"
+          rel="noreferer"
+          class="font-semibold hover:underline"
+          >smkn1bdl.sch.id</a
+        >
+        <hr class="text-gray-400 mt-12 mb-4" />
+        <p class="py-4">Copyright © SMK Negeri 1 Bandar Lampung</p>
+      </div>
+    </footer>
+  </body>
+</html>
