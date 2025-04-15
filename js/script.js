@@ -2,13 +2,21 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
 	document.getElementById('mobile-menu').classList.toggle('hidden');
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-	const links = document.querySelectorAll('.nav-link');
-	const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll('.nav-link');
 
-	links.forEach((link) => {
-		if (currentPath.endsWith(link.getAttribute('href'))) {
-			link.classList.add('text-green-700', 'font-semibold', 'underline');
-		}
+navLinks.forEach((link) => {
+	const dropdown = link.nextElementSibling;
+
+	link.addEventListener('click', (e) => {
+		e.stopPropagation();
+
+		navLinks.forEach((otherLink) => {
+			const otherDropdown = otherLink.nextElementSibling;
+			if (otherDropdown !== dropdown) {
+				otherDropdown.classList.add('hidden');
+			}
+		});
+
+		dropdown.classList.toggle('hidden');
 	});
 });
