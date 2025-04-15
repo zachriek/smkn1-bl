@@ -13,7 +13,7 @@
     <?php include_once "components/header.php"; ?>
 
     <!-- Main Content -->
-    <main class="container mx-auto mt-[100px] px-4">
+    <main class="container mx-auto my-[100px] px-4">
         <h1 class="text-2xl font-bold text-center">Jadwal Mengajar Guru</h1>
 
         <div class="selector my-4 flex justify-center gap-4">
