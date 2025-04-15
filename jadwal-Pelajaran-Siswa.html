@@ -3,129 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Jadwal-Pelajaran-Siswa.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Jadwal Pelajaran SMKN-1 Bandar Lampung</title>
 </head>
-<body>
-
-    <header>
-        <div class="logo">
-            <img src="logo smk1.png" alt="Logo SMKN-1 Bandar Lampung">
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gray-100 h-[80px] flex items-center fixed top-0 left-0 w-full shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center gap-2">
+                <img src="./images/logo-smkn1.png" alt="SMK Negeri 1 Bandar Lampung" class="w-[70px]" />
+                <p class="text-xl font-semibold">SMK Negeri 1 Bandar Lampung</p>
+            </div>
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Beranda</a></li>
+                    <li><a href="data-guru.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Guru</a></li>
+                    <li><a href="berita.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Berita</a></li>
+                    <li><a href="visi-misi.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Visi Misi</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Guru</a></li>
-                <li><a href="#">Siswa</a></li>
-                <li><a href="#">Pendaftaran</a></li>
-                <li><a href="#">Lainnya</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <h1>Jadwal Pelajaran SMKN-1 Bandar Lampung</h1>
-        <h2>Jadwal Siswa Dan Guru</h2>
-
-        <div class="selector">
-            <label for="kelas">Kelas:</label>
-            <select id="kelas">
-                <option value="7A">7A</option>
-            </select>
-
-            <label for="guru">Guru:</label>
-            <select id="guru">
-                <option value="all">Semua</option>
+    <!-- Main Content -->
+    <main class="container mx-auto mt-[100px] px-4">
+        <h1 class="text-2xl font-bold text-center">Jadwal Pelajaran Siswa</h1>
+        
+        <div class="selector my-4 flex justify-center gap-4">
+            <label for="kelas" class="font-semibold">Kelas:</label>
+            <select id="kelas" class="border p-2 rounded">
+                <option value="10">Kelas 10</option>
+                <option value="11">Kelas 11</option>
+                <option value="12">Kelas 12</option>
             </select>
         </div>
 
-        <table>
+        <table class="w-full border-collapse border border-gray-300 text-center">
             <thead>
-                <tr>
-                    <th>Jam</th>
-                    <th>Senin</th>
-                    <th>Selasa</th>
-                    <th>Rabu</th>
-                    <th>Kamis</th>
-                    <th>Jumat</th>
+                <tr class="bg-gray-200">
+                    <th class="border border-gray-300 p-2">Jam</th>
+                    <th class="border border-gray-300 p-2">Senin</th>
+                    <th class="border border-gray-300 p-2">Selasa</th>
+                    <th class="border border-gray-300 p-2">Rabu</th>
+                    <th class="border border-gray-300 p-2">Kamis</th>
+                    <th class="border border-gray-300 p-2">Jumat</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>07:40 - 08:20</td>
-                    <td>Upacara</td>
-                    <td>B. Indo</td>
-                    <td>Mat</td>
-                    <td>B. Indo</td>
-                    <td>B. Indo</td>
+                    <td class="border border-gray-300 p-2">07:40 - 08:20</td>
+                    <td class="border border-gray-300 p-2">Upacara</td>
+                    <td class="border border-gray-300 p-2">B. Indo</td>
+                    <td class="border border-gray-300 p-2">Mat</td>
+                    <td class="border border-gray-300 p-2">B. Indo</td>
+                    <td class="border border-gray-300 p-2">B. Indo</td>
                 </tr>
                 <tr>
-                    <td>08:20 - 09:00</td>
-                    <td>IPA</td>
-                    <td>Alif Fikri</td>
-                    <td>Mat</td>
-                    <td>Alaya Naira</td>
-                    <td>IPA</td>
+                    <td class="border border-gray-300 p-2">08:20 - 09:00</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
+                    <td class="border border-gray-300 p-2">inggris</td>
+                    <td class="border border-gray-300 p-2">Mat</td>
+                    <td class="border border-gray-300 p-2">ips</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
                 </tr>
                 <tr>
-                    <td>09:00 - 09:40</td>
-                    <td>Alif Fikri</td>
-                    <td>Bunga</td>
-                    <td>Risa Jaya</td>
-                    <td>Risa Jaya</td>
-                    <td>IPA</td>
+                    <td class="border border-gray-300 p-2">09:00 - 10:00</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
+                    <td class="border border-gray-300 p-2">inggris</td>
+                    <td class="border border-gray-300 p-2">Mat</td>
+                    <td class="border border-gray-300 p-2">ips</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
                 </tr>
                 <tr>
-                    <td>10:00 - 10:40</td>
-                    <td>PKN</td>
-                    <td>Zachri</td>
-                    <td>Agustin Putri</td>
-                    <td>Risky Jaya</td>
-                    <td>Alif Fikri</td>
+                    <td class="border border-gray-300 p-2">10:00 - 10:30</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
                 </tr>
                 <tr>
-                    <td>10:40 - 11:20</td>
-                    <td>TPA</td>
-                    <td>TTK</td>
-                    <td>Agustin Putri</td>
-                    <td>Gurwi</td>
-                    <td>Mat</td>
+                    <td class="border border-gray-300 p-2">10:30 - 12:00</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
+                    <td class="border border-gray-300 p-2">inggris</td>
+                    <td class="border border-gray-300 p-2">Mat</td>
+                    <td class="border border-gray-300 p-2">ips</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
                 </tr>
                 <tr>
-                    <td>11:20 - 12:00</td>
-                    <td>Tuafiq</td>
-                    <td>Zachri</td>
-                    <td>SP</td>
-                    <td>Agustin Putri</td>
-                    <td>Affiliyah</td>
+                    <td class="border border-gray-300 p-2">12:00 - 13:00</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
+                    <td class="border border-gray-300 p-2">Istirahat</td>
                 </tr>
                 <tr>
-                    <td>12:30 - 13:10</td>
-                    <td>IPS</td>
-                    <td>Risa Jaya</td>
-                    <td>AM RAMA</td>
-                    <td>Risa Naira</td>
-                    <td>Agustin Putri</td>
-                </tr>
-                <tr>
-                    <td>14:10 - 15:50</td>
-                    <td>Risky Jaya</td>
-                    <td>Risky Jaya</td>
-                    <td>Risky Jaya</td>
-                    <td>Risky Jaya</td>
-                    <td>Risky Jaya</td>
+                    <td class="border border-gray-300 p-2">13:00 - 1:00</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
+                    <td class="border border-gray-300 p-2">inggris</td>
+                    <td class="border border-gray-300 p-2">Mat</td>
+                    <td class="border border-gray-300 p-2">ips</td>
+                    <td class="border border-gray-300 p-2">IPA</td>
                 </tr>
             </tbody>
         </table>
     </main>
 
-    <footer>
-        <p>Jalan Raya Gunung Luhur No.61, Salah Bawal, Kec. Tj. Bintang, Kabupaten Lampung Selatan, Lampung 35631</p>
-        <p>Email: <a href="mailto:smkn-1bandarlampung@yahoo.co.id">smkn-1bandarlampung@yahoo.co.id</a></p>
-        <p>Copyright © KOLABORASI 1</p>
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-4 mt-12">
+        <div class="container mx-auto text-center">
+            <p>Jalan Raya Gunung Luhur No.61, Salah Bawal, Kec. Tj. Bintang, Kabupaten Lampung Selatan, Lampung 35631</p>
+            <p>Email: <a href="mailto:smkn-1bandarlampung@yahoo.co.id" class="text-blue-600 hover:underline">smkn-1bandarlampung@yahoo.co.id</a></p>
+            <p class="mt-2">Copyright © KOLABORASI 1</p>
+        </div>
     </footer>
-
 </body>
 </html>

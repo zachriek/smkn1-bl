@@ -4,38 +4,89 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>Beranda</title>
 	</head>
 	<body class="bg-gray-50">
 		<!-- Header -->
-		<header class="bg-gray-100 h-[80px] flex items-center fixed top-0 left-0 w-full">
+		<header class="bg-gray-100 h-[80px] flex items-center fixed top-0 left-0 w-full shadow-md z-50">
 			<div class="container mx-auto flex justify-between items-center px-4">
 				<div class="flex items-center gap-2">
 					<img src="./images/logo-smkn1.png" alt="SMK Negeri 1 Bandar Lampung" class="w-[70px]" />
 					<p class="text-xl font-semibold">SMK Negeri 1 Bandar Lampung</p>
 				</div>
-				<button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none cursor-pointer">
-					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+
+				<!-- Desktop Menu -->
+				<nav class="hidden md:flex space-x-6">
+					<!-- Dropdown 1: Profil -->
+					<div class="relative group">
+						<button class="nav-link font-medium hover:text-green-700">Profil</button>
+						<div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg py-2 w-48 z-50">
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Profil Sekolah</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Pemberitahuan PPDB</a>
+						</div>
+					</div>
+
+					<!-- Dropdown 2: Akademik -->
+					<div class="relative group">
+						<button class="nav-link font-medium hover:text-green-700">Akademik</button>
+						<div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg py-2 w-56 z-50">
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Data Guru</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Jadwal Pelajaran Siswa</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Jadwal Mengajar Guru</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Struktur Organisasi</a>
+						</div>
+					</div>
+
+					<!-- Dropdown 3: Informasi -->
+					<div class="relative group">
+						<button class="nav-link font-medium hover:text-green-700">Informasi</button>
+						<div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg py-2 w-56 z-50">
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Berita</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Visi dan Misi</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Gallery Foto</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Fasilitas</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Ekstrakurikuler</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Prestasi</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Data Siswa</a>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100">Kontak Kami</a>
+						</div>
+					</div>
+				</nav>
+
+				<!-- Mobile Menu Toggle -->
+				<button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
 					</svg>
 				</button>
-				<nav class="hidden md:flex">
-					<ul class="flex space-x-4">
-						<li><a href="index.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Beranda">Beranda</a></li>
-						<li><a href="data-guru.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Guru">Guru</a></li>
-						<li><a href="berita.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Berita">Berita</a></li>
-						<li><a href="visi-misi.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Visi Misi">Visi Misi</a></li>
-					</ul>
-				</nav>
-				<div id="mobile-menu" class="hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md md:hidden">
-					<ul class="flex flex-col items-center space-y-4 py-4">
-						<li><a href="index.html" class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Beranda">Beranda</a></li>
-						<li><a href="data-guru.html" class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Guru">Guru</a></li>
-						<li><a href="berita.html" class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Berita">Berita</a></li>
-						<li><a href="visi-misi.html" class="nav-link block w-full text-center py-2 transition-all hover:underline hover:text-green-700 cursor-pointer" data-page="Visi Misi">Visi Misi</a></li>
-					</ul>
-				</div>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="hidden md:hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md">
+				<ul class="flex flex-col items-start px-6 py-4 space-y-4">
+					<li><strong>Profil</strong></li>
+					<li><a href="#" class="block">Home</a></li>
+					<li><a href="#" class="block">Profil Sekolah</a></li>
+					<li><a href="#" class="block">Pemberitahuan PPDB</a></li>
+
+					<li class="mt-4"><strong>Akademik</strong></li>
+					<li><a href="#" class="block">Data Guru</a></li>
+					<li><a href="#" class="block">Jadwal Pelajaran Siswa</a></li>
+					<li><a href="#" class="block">Jadwal Mengajar Guru</a></li>
+					<li><a href="#" class="block">Struktur Organisasi</a></li>
+
+					<li class="mt-4"><strong>Informasi</strong></li>
+					<li><a href="#" class="block">Berita</a></li>
+					<li><a href="#" class="block">Visi dan Misi</a></li>
+					<li><a href="#" class="block">Gallery Foto</a></li>
+					<li><a href="#" class="block">Fasilitas</a></li>
+					<li><a href="#" class="block">Ekstrakurikuler</a></li>
+					<li><a href="#" class="block">Prestasi</a></li>
+					<li><a href="#" class="block">Data Siswa</a></li>
+				</ul>
 			</div>
 		</header>
 
@@ -67,19 +118,63 @@
 		  
 
 		<!-- Footer -->
-		<footer class="bg-gray-200 py-4">
-			<div class="container mx-auto">
-				<div class="flex items-center gap-2 mb-2">
-					<img src="./images/logo-smkn1.png" alt="SMK Negeri 1 Bandar Lampung" class="w-[100px]" />
-					<div class="font-semibold">
-						<p>SMK Negeri 1 Bandar Lampung</p>
-						<p>Sekolah Pusat Keunggulan</p>
+		<footer class="bg-green-600 text-white py-10">
+			<div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+				<!-- Logo & Address -->
+				<div>
+					<img src="./images/logo-smkn1.png" alt="SMK Negeri 1 Bandar Lampung" class="w-28 mb-4" />
+					<h2 class="text-xl font-bold">SMK NEGERI 1 BANDAR LAMPUNG</h2>
+					<p class="mt-4">Jl. P. Morotai No. 33 Kel. Jagabaya III Kec. Wayhalim, Kota Bandar Lampung</p>
+					<p class="mt-4 text-gray-300 text-sm">©2025 Hak Cipta <span class="font-bold">SMKN 1 BANDAR LAMPUNG</span>. All Rights Reserved</p>
+				</div>
+
+				<!-- Link Terkait -->
+				<div>
+					<h3 class="text-lg font-bold mb-4">LINK TERKAIT</h3>
+					<ul class="space-y-2 text-gray-300">
+						<li><a href="#" class="hover:underline">Pengumuman</a></li>
+						<li><a href="#" class="hover:underline">Alumni</a></li>
+						<li><a href="#" class="hover:underline">CBT</a></li>
+						<li><a href="#" class="hover:underline">SPMB</a></li>
+						<li><a href="#" class="hover:underline">Kurikulum</a></li>
+						<li><a href="#" class="hover:underline">Dewan Guru & Staf</a></li>
+						<li><a href="#" class="hover:underline">LMS</a></li>
+					</ul>
+				</div>
+
+				<!-- Get in Touch -->
+				<div>
+					<h3 class="text-lg font-bold mb-4">GET IN TOUCH</h3>
+					<ul class="space-y-2 text-gray-300">
+						<li><a href="#" class="hover:underline">Courses</a></li>
+						<li><a href="#" class="hover:underline">Maps & Directions</a></li>
+						<li><a href="#" class="hover:underline">Jobs</a></li>
+						<li><a href="#" class="hover:underline">Social Media</a></li>
+						<li><a href="#" class="hover:underline">Sitemap</a></li>
+						<li><a href="#" class="hover:underline">Privacy Statement</a></li>
+						<li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+					</ul>
+				</div>
+
+				<!-- Newsletter -->
+				<div>
+					<h3 class="text-lg font-bold mb-4">NEWSLETTER</h3>
+					<div class="flex items-center bg-green-700 rounded-md overflow-hidden mb-6">
+						<input type="email" placeholder="Your email here" class="w-full p-2 bg-transparent text-white placeholder-gray-300 focus:outline-none" />
+						<button class="p-2 hover:bg-[#3b5a87]">
+							<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+								<path d="M4 4l16 8-16 8V4z" />
+							</svg>
+						</button>
+					</div>
+					<h3 class="text-lg font-bold mb-2">CONNECT US</h3>
+					<div class="flex space-x-4 text-2xl">
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-x-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-pinterest"></i></a>
 					</div>
 				</div>
-				<p class="mb-4">Gunung Sulah, Way Halim, Jl. Pulau Morotai No.33, Jagabaya III, Kec. Sukarame, Kota Bandar Lampung, Lampung 35122</p>
-				<a href="https://smkn1bdl.sch.id/" target="_blank" rel="noreferer" class="font-semibold hover:underline">smkn1bdl.sch.id</a>
-				<hr class="text-gray-400 mt-12 mb-4" />
-				<p class="py-4">Copyright © SMK Negeri 1 Bandar Lampung</p>
 			</div>
 		</footer>
 
