@@ -15,9 +15,6 @@
     <!-- Main Content -->
     <main class="container mx-auto my-[100px] px-4">
         <h1 class="text-2xl font-bold text-center">Jadwal Pelajaran Siswa</h1>
-
-
-
         <div class="selector my-4 flex justify-center gap-4">
             <label for="kelas" class="font-semibold">Kelas:</label>
             <select id="kelas" class="border p-2 rounded">
@@ -29,7 +26,6 @@
 
         <div id="tabel-jadwal"></div>
     </main>
-
     <script>
         const dataJadwal = {
             "10": [

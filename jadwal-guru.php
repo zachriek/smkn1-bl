@@ -19,9 +19,9 @@
         <div class="selector my-4 flex justify-center gap-4">
             <label for="guru" class="font-semibold">Guru:</label>
             <select id="guru" class="border p-2 rounded">
-                <option value="guru1">Bu Salsa</option>
-                <option value="guru2">Bu Sri</option>
-                <option value="guru3">Bu Septi</option>
+            <option value="guru1">Sumiati, M.Pd</option>
+                <option value="guru2">Susi Andriani, S.Pd</option>
+                <option value="guru3">Yuyun Astria, S.ST</option>
             </select>
         </div>
 

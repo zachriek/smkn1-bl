@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Struktur Organisasi</title>
 </head>
-
 <body class="bg-gray-50">
     <?php include_once "components/header.php"; ?>
 
