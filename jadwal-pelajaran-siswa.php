@@ -10,39 +10,11 @@
 </head>
 
 <body class="bg-gray-50">
-<<<<<<< HEAD:jadwal-Pelajaran-Siswa.html
-
-    <!-- Header -->
-    <header class="bg-gray-100 h-[80px] flex items-center fixed top-0 left-0 w-full shadow-md z-50">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center gap-2">
-                <img src="./images/logo-smkn1.png" alt="SMK Negeri 1 Bandar Lampung" class="w-[70px]" />
-                <p class="text-xl font-semibold">SMK Negeri 1 Bandar Lampung</p>
-            </div>
-            <nav class="hidden md:flex">
-                <ul class="flex space-x-4">
-                    <li><a href="index.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Beranda</a></li>
-                    <li><a href="data-guru.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Guru</a></li>
-                    <li><a href="berita.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Berita</a></li>
-                    <li><a href="visi-misi.html" class="nav-link transition-all hover:underline hover:text-green-700 cursor-pointer">Visi Misi</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto mt-[100px] px-4 mb-20">
-        <h1 class="text-2xl font-bold text-center text-black mb-6">
-            Jadwal Pelajaran Siswa
-        </h1>
-=======
     <?php include_once "components/header.php"; ?>
 
     <!-- Main Content -->
     <main class="container mx-auto my-[100px] px-4">
         <h1 class="text-2xl font-bold text-center">Jadwal Pelajaran Siswa</h1>
->>>>>>> 960836ddf6dc6b75bf137f53c19eb7a16e948d32:jadwal-pelajaran-siswa.php
-
         <div class="selector my-4 flex justify-center gap-4">
             <label for="kelas" class="font-semibold">Kelas:</label>
             <select id="kelas" class="border p-2 rounded">
@@ -175,9 +147,9 @@
         select.addEventListener("change", (e) => renderTable(e.target.value));
         renderTable("10");
     </script>
-=======
     <?php include_once "components/footer.php"; ?>
->>>>>>> 960836ddf6dc6b75bf137f53c19eb7a16e948d32:jadwal-pelajaran-siswa.php
+    <!-- Script -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

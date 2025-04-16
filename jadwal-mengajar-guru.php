@@ -9,37 +9,6 @@
 </head>
 
 <body class="bg-gray-50">
-<<<<<<< HEAD:Jadwal-Mengajar-Guru.html
-
-    <!-- Header -->
-    <header class="bg-gray-100 h-[80px] flex items-center fixed top-0 left-0 w-full shadow-md z-50">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center gap-2">
-                <img src="./images/logo-smkn1.png" alt="SMK Negeri 1 Bandar Lampung" class="w-[70px]" />
-                <p class="text-xl font-semibold">SMK Negeri 1 Bandar Lampung</p>
-            </div>
-            <nav class="hidden md:flex">
-                <ul class="flex space-x-4">
-                    <li><a href="index.html" class="hover:underline hover:text-green-700">Beranda</a></li>
-                    <li><a href="data-guru.html" class="hover:underline hover:text-green-700">Guru</a></li>
-                    <li><a href="berita.html" class="hover:underline hover:text-green-700">Berita</a></li>
-                    <li><a href="visi-misi.html" class="hover:underline hover:text-green-700">Visi Misi</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto mt-[120px] px-4 mb-10">
-        <h1 class="text-2xl font-bold text-center mb-6">Jadwal Mengajar Guru</h1>
-
-        <div class="flex justify-center items-center gap-4 mb-8">
-            <label for="guru" class="font-semibold">Pilih Guru:</label>
-            <select id="guru" class="border p-2 rounded shadow-sm" onchange="tampilkanJadwal()">
-                <option value="rizal">Bapak Drs. H. Muhammad Rizal, M.Pd.</option>
-                <option value="siti">Ibu Dra. Siti Aminah, M.Si.</option>
-                <option value="anton">Bapak Ir. Anton Saputra, S.T., M.T.</option>
-=======
     <?php include_once "components/header.php"; ?>
 
     <!-- Main Content -->
@@ -52,7 +21,6 @@
                 <option value="guru1">bu salsa</option>
                 <option value="guru2">bu sri</option>
                 <option value="guru3">bu septi</option>
->>>>>>> 960836ddf6dc6b75bf137f53c19eb7a16e948d32:jadwal-mengajar-guru.php
             </select>
         </div>
 
@@ -184,9 +152,10 @@
         window.onload = tampilkanJadwal;
     </script>
 
-=======
+
     <?php include_once "components/footer.php"; ?>
->>>>>>> 960836ddf6dc6b75bf137f53c19eb7a16e948d32:jadwal-mengajar-guru.php
+    <!-- Script -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
