@@ -49,7 +49,7 @@ $daftar_guru = [
 	 <!-- Gallery Section -->
 	 <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 my-10">
         <div class="bg-white border border-gray-300 rounded-lg overflow-hidden">
-            <img src="./images/Placeholder_img.jpg" alt="Kegiatan 1" class="w-full h-[200px] object-cover">
+            <img src="./images/galeri_1.jpg" alt="Kegiatan 1" class="w-full h-[200px] object-cover">
             <div class="p-4">
                 <h3 class="text-xl font-semibold">Upacara Bendera</h3>
                 <p class="text-gray-800 mt-2">Suasana upacara bendera di sekolah.</p>
@@ -57,18 +57,18 @@ $daftar_guru = [
         </div>
 
         <div class="bg-white border border-gray-300 rounded-lg overflow-hidden">
-            <img src="./images/Placeholder_img.jpg" alt="Kegiatan 2" class="w-full h-[200px] object-cover">
+            <img src="./images/galeri_2.jpg" alt="Kegiatan 2" class="w-full h-[200px] object-cover">
             <div class="p-4">
-                <h3 class="text-xl font-semibold">Lomba 17 Agustus</h3>
-                <p class="text-gray-800 mt-2">Keseruan lomba peringatan Hari Kemerdekaan.</p>
+                <h3 class="text-xl font-semibold">Kegiatan Ujian Sekolah</h3>
+                <p class="text-gray-800 mt-2">Suasana siswa melaksanakan ujian akhir dengan tertib dan penuh konsentrasi di ruang kelas.</p>
             </div>
         </div>
 
         <div class="bg-white border border-gray-300 rounded-lg overflow-hidden">
-            <img src="./images/Placeholder_img.jpg" alt="Kegiatan 3" class="w-full h-[200px] object-cover">
+            <img src="./images/galeri_3.jpg" alt="Kegiatan 3" class="w-full h-[200px] object-cover">
             <div class="p-4">
-                <h3 class="text-xl font-semibold">Ekstrakurikuler Pramuka</h3>
-                <p class="text-gray-800 mt-2">Kegiatan perkemahan bersama anggota Pramuka.</p>
+                <h3 class="text-xl font-semibold">Kegiatan Literasi Sekolah</h3>
+                <p class="text-gray-800 mt-2">Kegiatan membaca bersama di pagi hari untuk meningkatkan budaya literasi siswa.</p>
             </div>
         </div>
 		</section>
@@ -120,21 +120,21 @@ $daftar_guru = [
     <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 my-10">
         <!-- Paskibra -->
         <div class="bg-white border border-gray-300 rounded-lg p-4">
-            <img src="./images/Placeholder_img.jpg" alt="Paskibra" class="w-full h-[200px] object-cover">
+            <img src="./images/ekstra_1.jpg" alt="Paskibra" class="w-full h-[200px] object-cover">
             <h3 class="text-xl font-semibold mt-8">Paskibra</h3>
             <p class="mt-2 text-gray-800">Ekstrakurikuler untuk melatih kedisiplinan dan kepemimpinan melalui baris-berbaris.</p>
         </div>
 
         <!-- Pramuka -->
         <div class="bg-white border border-gray-300 rounded-lg p-4">
-            <img src="./images/Placeholder_img.jpg" alt="Pramuka" class="w-full h-[200px] object-cover">
+            <img src="./images/ekstra_2.jpg" alt="Pramuka" class="w-full h-[200px] object-cover">
             <h3 class="text-xl font-semibold mt-8">Pramuka</h3>
             <p class="mt-2 text-gray-800">Kegiatan yang membentuk karakter, kerja sama, dan keterampilan bertahan hidup.</p>
         </div>
 
         <!-- PMR -->
         <div class="bg-white border border-gray-300 rounded-lg p-4">
-            <img src="./images/Placeholder_img.jpg" alt="PMR" class="w-full h-[200px] object-cover">
+            <img src="./images/ekstra_3.jpg" alt="PMR" class="w-full h-[200px] object-cover">
             <h3 class="text-xl font-semibold mt-8">PMR</h3>
             <p class="mt-2 text-gray-800">Palang Merah Remaja sebagai wadah pembelajaran kesehatan dan kepedulian sosial.</p>
         </div>
