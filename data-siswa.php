@@ -103,6 +103,7 @@
   </main>
 
   <?php include_once "components/footer.php"; ?>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

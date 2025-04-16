@@ -38,6 +38,10 @@
   </section>
 
   <?php include_once "components/footer.php"; ?>
+
+  	<!-- Script -->
+	<script src="./js/script.js"></script>
+    
 </body>
 
 </html>
