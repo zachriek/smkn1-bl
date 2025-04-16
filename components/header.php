@@ -14,7 +14,7 @@
         <div class="absolute hidden bg-white shadow-lg mt-2 rounded-lg py-2 w-48 z-50">
           <a href="./index.php" class="block px-4 py-2 hover:bg-gray-100">Beranda</a>
           <a href="./profil-sekolah.php" class="block px-4 py-2 hover:bg-gray-100">Profil Sekolah</a>
-          <a href="./ppdb.php" class="block px-4 py-2 hover:bg-gray-100">Pemberitahuan PPDB</a>
+          <a href="./spmb.php" class="block px-4 py-2 hover:bg-gray-100">Pemberitahuan SPMB</a>
         </div>
       </div>
 
@@ -58,7 +58,7 @@
       <li><strong>Profil</strong></li>
       <li><a href="./index.php" class="block">Home</a></li>
       <li><a href="./profil-sekolah.php" class="block">Profil Sekolah</a></li>
-      <li><a href="./ppdb.php" class="block">Pemberitahuan PPDB</a></li>
+      <li><a href="./spmb.php" class="block">Pemberitahuan PPDB</a></li>
 
       <li class="mt-4"><strong>Akademik</strong></li>
       <li><a href="./data-guru.php" class="block">Data Guru</a></li>
