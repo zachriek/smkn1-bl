@@ -7,11 +7,11 @@
     </div>
 
     <!-- Desktop Menu -->
-    <nav class="navbar hidden lg:flex space-x-6">
+    <nav class="navbar hidden md:flex space-x-6">
       <!-- Dropdown 1: Profil -->
       <div class="relative">
         <button class="nav-link font-medium hover:text-green-700">Profil</button>
-        <div class="absolute hidden bg-white shadow-lg mt-2 rounded-lg py-2 w-48 z-50">
+        <div class="absolute hidden bg-white shadow-lg mt-2 rounded-lg py-2 w-48 z-50 right-0">
           <a href="./index.php" class="block px-4 py-2 hover:bg-gray-100">Beranda</a>
           <a href="./profil-sekolah.php" class="block px-4 py-2 hover:bg-gray-100">Profil Sekolah</a>
           <a href="./spmb.php" class="block px-4 py-2 hover:bg-gray-100">Pemberitahuan SPMB</a>
@@ -21,7 +21,7 @@
       <!-- Dropdown 2: Akademik -->
       <div class="relative">
         <button class="nav-link font-medium hover:text-green-700">Akademik</button>
-        <div class="absolute hidden bg-white shadow-lg mt-2 rounded-lg py-2 w-56 z-50">
+        <div class="absolute hidden bg-white shadow-lg mt-2 rounded-lg py-2 w-56 z-50 right-0">
           <a href="./data-guru.php" class="block px-4 py-2 hover:bg-gray-100">Data Guru</a>
           <a href="./jadwal-siswa.php" class="block px-4 py-2 hover:bg-gray-100">Jadwal Pelajaran Siswa</a>
           <a href="./jadwal-guru.php" class="block px-4 py-2 hover:bg-gray-100">Jadwal Mengajar Guru</a>
@@ -32,7 +32,7 @@
       <!-- Dropdown 3: Informasi -->
       <div class="relative">
         <button class="nav-link font-medium hover:text-green-700">Informasi</button>
-        <div class="absolute hidden bg-white shadow-lg mt-2 rounded-lg py-2 w-56 z-50">
+        <div class="absolute hidden bg-white shadow-lg mt-2 rounded-lg py-2 w-56 z-50 right-0">
           <a href="./berita.php" class="block px-4 py-2 hover:bg-gray-100">Berita</a>
           <a href="./visi-misi.php" class="block px-4 py-2 hover:bg-gray-100">Visi dan Misi</a>
           <a href="./galeri-foto.php" class="block px-4 py-2 hover:bg-gray-100">Galeri Foto</a>
@@ -45,7 +45,7 @@
     </nav>
 
     <!-- Mobile Menu Toggle -->
-    <button id="menu-toggle" class="lg:hidden text-gray-700 focus:outline-none">
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
@@ -53,7 +53,7 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden lg:hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md">
+  <div id="mobile-menu" class="hidden md:hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md">
     <ul class="flex flex-col items-start px-6 py-4 space-y-4">
       <li><strong>Profil</strong></li>
       <li><a href="./index.php" class="block">Home</a></li>
