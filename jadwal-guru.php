@@ -12,16 +12,15 @@
 
     <?php include_once "components/header.php"; ?>
 
-    <!-- Main Content -->
     <main class="container mx-auto my-[100px] px-4 min-h-screen">
         <h1 class="text-2xl font-bold text-center">Jadwal Mengajar Guru</h1>
 
         <div class="selector my-4 flex justify-center gap-4">
             <label for="guru" class="font-semibold">Guru:</label>
-            <select id="guru" class="border p-2 rounded">
-            <option value="guru1">Sumiati, M.Pd</option>
-                <option value="guru2">Susi Andriani, S.Pd</option>
-                <option value="guru3">Yuyun Astria, S.ST</option>
+            <select id="guru" class="border p-2 rounded" onchange="tampilkanJadwal()">
+                <option value="Guru1">Sumiati, M.Pd</option>
+                <option value="Guru2">Susi Andriani, S.Pd</option>
+                <option value="Guru3">Yuyun Astria, S.ST</option>
             </select>
         </div>
 
@@ -44,10 +43,9 @@
         </div>
     </main>
 
-    <!-- JavaScript -->
     <script>
         const jadwalGuru = {
-            rizal: [
+            Guru1: [
                 ["07:10 - 08:10", "Upacara", "10 TKJ", "11 TKJ", "12 TKJ", "Jadwal Kosong"],
                 ["08:10 - 09:00", "Jadwal Kosong", "10 TKJ", "11 TKJ", "Jadwal Kosong", "Jadwal Kosong"],
                 ["10:00 - 10:30", "Istirahat", "Istirahat", "Istirahat", "Istirahat", "Istirahat"],
@@ -57,7 +55,7 @@
                 ["14:00 - 15:00", "11 TKJ", "10 TKJ", "12 TKJ", "Jadwal Kosong", "Jadwal Kosong"],
                 ["15:00 - 16:00", "Jadwal Kosong", "Jadwal Kosong", "Jadwal Kosong", "10 TKJ", "12 TKJ"]
             ],
-            siti: [
+            Guru2: [
                 ["07:10 - 08:10", "Upacara", "11 AKL", "12 AKL", "Jadwal Kosong", "Jadwal Kosong"],
                 ["08:10 - 09:00", "Jadwal Kosong", "11 AKL", "12 AKL", "Jadwal Kosong", "Jadwal Kosong"],
                 ["10:00 - 10:30", "Istirahat", "Istirahat", "Istirahat", "Istirahat", "Istirahat"],
@@ -67,7 +65,7 @@
                 ["14:00 - 15:00", "12 AKL", "11 AKL", "Jadwal Kosong", "Jadwal Kosong", "10 AKL"],
                 ["15:00 - 16:00", "Jadwal Kosong", "Jadwal Kosong", "11 AKL", "12 AKL", "Jadwal Kosong"]
             ],
-            anton: [
+            Guru3: [
                 ["07:10 - 08:10", "Upacara", "10 RPL", "11 RPL", "12 RPL", "Jadwal Kosong"],
                 ["08:10 - 09:00", "Jadwal Kosong", "11 RPL", "12 RPL", "Jadwal Kosong", "10 RPL"],
                 ["10:00 - 10:30", "Istirahat", "Istirahat", "Istirahat", "Istirahat", "Istirahat"],
@@ -94,8 +92,10 @@
                 tbody.innerHTML += tr;
             });
         }
-        tanpilkanJadwal()
+
+        window.onload = tampilkanJadwal;
     </script>
+
     <?php include_once "components/footer.php"; ?>
     <script src="./js/script.js"></script>
 </body>
