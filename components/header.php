@@ -7,7 +7,7 @@
     </div>
 
     <!-- Desktop Menu -->
-    <nav class="navbar hidden md:flex space-x-6">
+    <nav class="navbar hidden lg:flex space-x-6">
       <!-- Dropdown 1: Profil -->
       <div class="relative">
         <button class="nav-link font-medium hover:text-green-700">Profil</button>
@@ -45,7 +45,7 @@
     </nav>
 
     <!-- Mobile Menu Toggle -->
-    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+    <button id="menu-toggle" class="lg:hidden text-gray-700 focus:outline-none">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
@@ -53,7 +53,7 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md">
+  <div id="mobile-menu" class="hidden lg:hidden absolute top-[80px] left-0 w-full bg-gray-100 shadow-md">
     <ul class="flex flex-col items-start px-6 py-4 space-y-4">
       <li><strong>Profil</strong></li>
       <li><a href="./index.php" class="block">Home</a></li>
